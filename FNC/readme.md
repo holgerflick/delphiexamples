@@ -1,4 +1,4 @@
-## Examples for FNC.
+# Examples for FNC
 
 All directories contain a readme with detailed explanation of the examples or links to videos etc. Tested target platforms are also listed.
 
