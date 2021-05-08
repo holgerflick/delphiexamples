@@ -1,5 +1,4 @@
-# Maps_US_States
-
+# Maps_US_Capitals
 Showing a grid with all the US capitals and marking them on a map.
 
 ## Requirements
