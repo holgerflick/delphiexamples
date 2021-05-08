@@ -1,0 +1,134 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  ActiveControl = Map
+  Caption = 'FNC Maps with Linux: Capitals of the United States'
+  ClientHeight = 522
+  ClientWidth = 627
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Map: TTMSFNCMaps
+    Align = Client
+    Size.Width = 627.000000000000000000
+    Size.Height = 295.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnMapInitialized = MapMapInitialized
+    Polylines = <>
+    Polygons = <>
+    Circles = <>
+    Rectangles = <>
+    Markers = <>
+    Options.DefaultLatitude = 40.689247000000000000
+    Options.DefaultLongitude = -74.044501999999990000
+    Service = msOpenLayers
+  end
+  object Grid: TTMSFNCGrid
+    Align = Bottom
+    Position.Y = 305.000000000000000000
+    Size.Width = 627.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Options.ColumnSize.Stretch = True
+    Options.ColumnSize.StretchAll = True
+    Options.Editing.CalcFormat = '%g'
+    Options.Editing.Enabled = False
+    Options.Grouping.CalcFormat = '%g'
+    Options.Grouping.GroupCountFormat = '(%d)'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.ColumnSizing = True
+    Options.Mouse.ColumnSizeMargin = 6
+    Options.Mouse.RowSizeMargin = 6
+    Options.Mouse.FixedColumnSizing = True
+    Options.Selection.Mode = smSingleRow
+    Columns = <
+      item
+        BorderWidth = 1
+        FixedFont.Name = 'Segoe UI'
+        FixedFont.StyleExt = {00070000000000000004000000}
+        Font.Name = 'Segoe UI'
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1
+        FixedFont.Name = 'Segoe UI'
+        FixedFont.StyleExt = {00070000000000000004000000}
+        Font.Name = 'Segoe UI'
+        ID = ''
+        Width = 134.750000000000000000
+      end
+      item
+        BorderWidth = 1
+        FixedFont.Name = 'Segoe UI'
+        FixedFont.StyleExt = {00070000000000000004000000}
+        Font.Name = 'Segoe UI'
+        ID = ''
+        Width = 134.750000000000000000
+      end
+      item
+        BorderWidth = 1
+        FixedFont.Name = 'Segoe UI'
+        FixedFont.StyleExt = {00070000000000000004000000}
+        Font.Name = 'Segoe UI'
+        ID = ''
+        Width = 134.750000000000000000
+      end
+      item
+        BorderWidth = 1
+        FixedFont.Name = 'Segoe UI'
+        FixedFont.StyleExt = {00070000000000000004000000}
+        Font.Name = 'Segoe UI'
+        ID = ''
+        Width = 134.750000000000000000
+      end>
+    TopRow = 1
+    Appearance.FixedLayout.Fill.Color = xFFE6E6E6
+    Appearance.FixedLayout.Font.Name = 'Segoe UI'
+    Appearance.FixedLayout.Font.StyleExt = {00070000000000000004000000}
+    Appearance.NormalLayout.Fill.Color = claNull
+    Appearance.NormalLayout.Font.Name = 'Segoe UI'
+    Appearance.GroupLayout.Fill.Color = xFF6E93C3
+    Appearance.GroupLayout.Font.Color = claWhite
+    Appearance.GroupLayout.Font.Name = 'Segoe UI'
+    Appearance.SummaryLayout.Fill.Color = xFFB9C5D5
+    Appearance.SummaryLayout.Font.Name = 'Segoe UI'
+    Appearance.SelectedLayout.Fill.Color = claLightsteelblue
+    Appearance.SelectedLayout.Font.Color = claWhite
+    Appearance.SelectedLayout.Font.Name = 'Segoe UI'
+    Appearance.FocusedLayout.Fill.Color = claLightsteelblue
+    Appearance.FocusedLayout.Font.Color = claWhite
+    Appearance.FocusedLayout.Font.Name = 'Segoe UI'
+    Appearance.FixedSelectedLayout.Fill.Color = claLightsteelblue
+    Appearance.FixedSelectedLayout.Font.Name = 'Segoe UI'
+    Appearance.BandLayout.Fill.Color = claLightyellow
+    Appearance.BandLayout.Font.Name = 'Segoe UI'
+    Appearance.ProgressLayout.Format = '%.0f%%'
+    LeftCol = 1
+    ScrollMode = scmItemScrolling
+    OnGetCellLayout = GridGetCellLayout
+  end
+  object TMSFNCSplitter1: TTMSFNCSplitter
+    Align = Bottom
+    Position.Y = 295.000000000000000000
+    Size.Width = 627.000000000000000000
+    Size.Height = 10.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Appearance.IndicatorDownFill.Color = xFF1BADF8
+    Appearance.IndicatorDownStroke.Color = claGray
+    Appearance.IndicatorHoverStroke.Color = claGray
+    Appearance.IndicatorStroke.Color = claGray
+    Appearance.SplitterDownFill.Color = xFFB8C0C8
+    Appearance.SplitterDownStroke.Color = claSlategray
+    Appearance.SplitterFill.Color = xFFE9E9E9
+    Appearance.SplitterHoverFill.Color = xFFBBC4CC
+    Appearance.SplitterHoverStroke.Color = claLightslategray
+    Appearance.SplitterStroke.Color = claDarkgray
+    MinSize = 20.000000000000000000
+  end
+end

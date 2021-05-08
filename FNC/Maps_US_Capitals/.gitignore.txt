@@ -1,0 +1,29 @@
+# IDE files
+*.~*
+*.cbk
+*.dsk
+*.identcache
+*.local
+*.skincfg
+*.stat
+*.tvsconfig
+__history/
+__recovery/
+
+# Delphi Compiler output files
+*.dcu
+*.drc
+*.jdbg
+*.map
+*.plist
+*.rsm
+*.tds
+
+# 64bit Delphi files
+*.o
+
+# Added in XE8
+*.stat
+
+*.bak
+

@@ -1,0 +1,2 @@
+STATES RCDATA ".\data\us-states-capitals.csv"
+API RCDATA ".\data\google.apikey"
