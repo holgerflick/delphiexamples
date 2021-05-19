@@ -3,7 +3,7 @@ Showing a grid with all the US capitals and marking them on a map.
 
 ## Tutorial
 
-(tbr)
+A video tutorial on YouTube is available here: https://www.youtube.com/watch?v=aKPfokI_8yM
 
 ![Screenshot](./win_linux_comp.png)
 
