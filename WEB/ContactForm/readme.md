@@ -12,4 +12,5 @@ TMS WEB Core
 ## Tested platforms
 Chrome Web browser
 
+## Screenshot
 ![Screenshot](./screenshot.png)
