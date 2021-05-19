@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <div class="container">
+    <p class="lead">Contacting us is easy. Just fill out the form below and we will get back to you as soon as possible.
+    </p>
+
+    <form class="row g-3">
+      <div class="col-sm-6">
+        <label for="txtFirst" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="txtFirst" placeholder="Jon">
+      </div>
+      <div class="col-sm-6">
+        <label for="txtLast" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="txtLast" placeholder="Doe">
+      </div>
+      <div class="col-md-6">
+        <label for="txtEMail" class="form-label"><i class="bi bi-envelope"></i> E-Mail</label>
+        <input type="email" class="form-control" id="txtEmail" placeholder="name@mydomain.com">
+      </div>
+      <div class="col-md-6">
+        <label for="txtSubject" class="form-label"><i class="bi bi-card-heading"></i> Subject</label>
+        <input type="text" class="form-control" id="txtSubject" placeholder="Paraphrase your message.">
+      </div>
+      <div class="col-12">
+        <label for="txtMessage" class="form-label"><i class="bi bi-chat"></i> Message</label>
+        <textarea class="form-control" rows="5" id="txtBody"></textarea>
+      </div>
+      <div class="col-12 d-flex justify-content-between">
+        <button type="button" class="btn btn-lg btn-danger" id="btnReset"><i class="bi bi-x-circle"></i> Clear</button>
+        <button type="button" class="btn btn-lg btn-success" id="btnSend"><i class="bi bi-envelope"></i> Send</button>
+      </div>
+    </form>
+
+  </div>
+</body>
+
+</html>
