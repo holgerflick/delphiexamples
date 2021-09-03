@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{33BDAA9F-86E8-47E8-A078-0D8912A84E07}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Grids\DelphiBooksVCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Polylists\PolyEx.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DelphiBooksVCL">
+        <MSBuild Projects="Grids\DelphiBooksVCL.dproj"/>
+    </Target>
+    <Target Name="DelphiBooksVCL:Clean">
+        <MSBuild Projects="Grids\DelphiBooksVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DelphiBooksVCL:Make">
+        <MSBuild Projects="Grids\DelphiBooksVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PolyEx">
+        <MSBuild Projects="Polylists\PolyEx.dproj"/>
+    </Target>
+    <Target Name="PolyEx:Clean">
+        <MSBuild Projects="Polylists\PolyEx.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PolyEx:Make">
+        <MSBuild Projects="Polylists\PolyEx.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DelphiBooksVCL;PolyEx"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DelphiBooksVCL:Clean;PolyEx:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DelphiBooksVCL:Make;PolyEx:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
